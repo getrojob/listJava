@@ -1,0 +1,8 @@
+@startuml
+class Employee {
+  - integer id
+  - string name
+  - double salary
+  + increaseSalary(percentage: double) : void 
+}
+@enduml
