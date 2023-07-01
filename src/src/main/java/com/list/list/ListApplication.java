@@ -49,7 +49,11 @@ public class ListApplication {
 		System.out.println();
 		System.out.print("Enter the employee id that will have salary increase: ");
 		int id = sc.nextInt();
+
 		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+
+		// boolean pos = hasId(list, id);
+
 		if (emp == null) {
 			System.out.println("This id does not exist!");
 		} else {
